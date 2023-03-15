@@ -2,7 +2,7 @@
 Curso de Spring Boot 3: aplique boas práticas e proteja uma API Rest
 
 ---
-## 📄 Aula 01
+## 📄 Aula 01 - - Boas práticas na API
 
 Tratamento do retorno da API nas requisições
 - Existem boas práticas para os retornos das requisições.
@@ -54,6 +54,29 @@ Nessa aula:
 - Modificar o código HTTP devolvido nas respostas da API;
 - Adicionar cabeçalhos nas respostas da API;
 - Utilizar os códigos HTTP mais apropriados para cada operação realizada na API.
+
+---
+## 📄 Aula 02 - Lidando com erros
+
+Para saber mais sobre as propriedades do application.properties
+- Common Application Properties:
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+
+Anotação @RestControllerAdvice
+- Utilizamos esta anotação para indicar ao Spring que a classe anotada é uma classe utilizada no tratamento de erros.
+
+Anotação @ExceptionHandler
+- Utilizamos esta anotação para especificar que o método anotado está tratando uma determinada exception.
+
+@RestControllerAdvice
+public class TratadorDeErros {
+        @ExceptionHandler(EntityNotFoundException.class)
+        public void tratarErro404() {
+        }
+}
+
+Na classe acima, estamos indicando que ela é para tratamento de erros e que o método "tratarErro404" está tratando a 
+exception EntityNotFoundException
 
 
 
