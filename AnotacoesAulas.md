@@ -200,3 +200,14 @@ pouco complexo devido às diversas possibilidades existentes.
 - Para conhecer mais detalhes e entender melhor como montar consultas dinâmicas com o Spring Data:
   https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
 
+Bcrypt
+Para gerar senhas no "formato" bcrypt, pode-se utilizar o site abaixo:
+https://bcrypt-generator.com/
+
+Nessa aula:
+- Funciona o processo de autenticação e autorização em uma API Rest;
+- Adicionar o Spring Security ao projeto;
+- Funciona o comportamento padrão do Spring Security em uma aplicação;
+- Implementar o processo de autenticação na API, de maneira Stateless, utilizando as classes e configurações do 
+Spring Security.
+
