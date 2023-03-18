@@ -150,9 +150,18 @@ public record DadosCadastroMedico(
 
 Nessa aula:
 - Criar uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;
-- Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;
+- Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de 
+tratamento de erros deve capturar;
 - Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;
 - Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
 - Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.
 
+---
+## 📄 Aula 03 - Spring Security
+
+Tipos de autenticação em APIs Rest
+- Existem diversas formas de se realizar o processo de autenticação e autorização em aplicações Web e APIs Rest, 
+sendo que no curso utilizaremos Tokens JWT.
+- Principais formas de autenticação
+  https://www.alura.com.br/artigos/tipos-de-autenticacao
 
