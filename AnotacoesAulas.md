@@ -223,7 +223,26 @@ sobre esse padrão em seu site oficial.
   - O que é JSON Web Tokens? https://www.alura.com.br/artigos/o-que-e-json-web-tokens
   - O que é Json Web Token (JWT)? https://cursos.alura.com.br/extra/alura-mais/o-que-e-json-web-token-jwt--c203
 
-Para saber mais sobre a lib auth0 referente a geração de Tokens:
+- Para saber mais sobre a lib auth0 referente a geração de Tokens:
 https://github.com/auth0/java-jwt
 
+Além do Issuer, Subject e data de expiração, podemos incluir outras informações no token JWT, de acordo com as 
+necessidades da aplicação. Por exemplo, podemos incluir o id do usuário no token, bastando para isso utilizar o 
+método withClaim:
 
+return JWT.create()
+.withIssuer("API Voll.med")
+.withSubject(usuario.getLogin())
+    .withClaim("id", usuario.getId())
+    .withExpiresAt(dataExpiracao())
+    .sign(algoritmo);
+
+O método withClaim recebe dois parâmetros, sendo o primeiro uma String que identifica o nome do claim 
+(propriedade armazenada no token), e o segundo a informação que se deseja armazenar.
+
+Nessa aula:
+- Adicionar a biblioteca Auth0 java-jwt como dependência do projeto;
+- Utilizar essa biblioteca para realizar a geração de um token na API;
+- Injetar uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a 
+anotação @Value;
+- Devolver um token gerado na API quando um usuário se autenticar nela.
