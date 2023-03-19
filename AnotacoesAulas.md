@@ -223,4 +223,7 @@ sobre esse padrão em seu site oficial.
   - O que é JSON Web Tokens? https://www.alura.com.br/artigos/o-que-e-json-web-tokens
   - O que é Json Web Token (JWT)? https://cursos.alura.com.br/extra/alura-mais/o-que-e-json-web-token-jwt--c203
 
+Para saber mais sobre a lib auth0 referente a geração de Tokens:
+https://github.com/auth0/java-jwt
+
 
