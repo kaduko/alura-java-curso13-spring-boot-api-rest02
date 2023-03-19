@@ -332,3 +332,13 @@ seguinte anotação na classe Securityconfigurations do projeto:
   @EnableMethodSecurity(securedEnabled = true)
 - Você pode conhecer mais detalhes sobre o recurso de method security na documentação do Spring Security, disponível em:
 https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html
+
+Nessa aula:
+- Funcionam os Filters em uma requisição;
+- Implementar um filter criando uma classe que herda da classe OncePerRequestFilter, do Spring;
+- Utilizar a biblioteca Auth0 java-jwt para realizar a validação dos tokens recebidos na API;
+- Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;
+- Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.
+
+Projeto final do curso:
+https://github.com/alura-cursos/2770-spring-boot/archive/refs/heads/aula_5.zip
