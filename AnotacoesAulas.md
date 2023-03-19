@@ -278,4 +278,7 @@ URL da requisição.
 
 @Compomnent
 - O @Component é utilizado para que o Spring carregue uma classe/componente genérico
-- 
+
+O envio de um token é realizado em um cabeçalho do Protocolo HTTP.
+
+Por padrão, o tipo de prefixo Bearer é utilizado para tokens JWT.
