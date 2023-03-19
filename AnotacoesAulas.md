@@ -282,3 +282,8 @@ URL da requisição.
 O envio de um token é realizado em um cabeçalho do Protocolo HTTP.
 
 Por padrão, o tipo de prefixo Bearer é utilizado para tokens JWT.
+
+Filter Chain
+- Pode ser utilizado para bloquear uma requisição.
+- Representa o conjunto de filtros responsáveis por interceptar requisições.
+
