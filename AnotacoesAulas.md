@@ -211,3 +211,16 @@ Nessa aula:
 - Implementar o processo de autenticação na API, de maneira Stateless, utilizando as classes e configurações do 
 Spring Security.
 
+---
+## 📄 Aula 04 - JSON Web Token
+
+JSON Web Token
+- JSON Web Token, ou JWT, é um padrão utilizado para a geração de tokens, que nada mais são do que Strings, 
+representando, de maneira segura, informações que serão compartilhadas entre dois sistemas. Você pode conhecer melhor 
+sobre esse padrão em seu site oficial.
+  https://jwt.io/introduction
+- Para saber mais:
+  - O que é JSON Web Tokens? https://www.alura.com.br/artigos/o-que-e-json-web-tokens
+  - O que é Json Web Token (JWT)? https://cursos.alura.com.br/extra/alura-mais/o-que-e-json-web-token-jwt--c203
+
+
