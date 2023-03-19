@@ -275,3 +275,7 @@ Por exemplo:
 ao método filterChain.doFilter indica que os próximos filters, caso existam outros, podem ser executados. A anotação 
 @WebFilter, adicionada na classe, indica ao servidor em quais requisições esse filter deve ser chamado, baseando-se na 
 URL da requisição.
+
+@Compomnent
+- O @Component é utilizado para que o Spring carregue uma classe/componente genérico
+- 
